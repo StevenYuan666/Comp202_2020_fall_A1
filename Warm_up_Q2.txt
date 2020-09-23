@@ -1,0 +1,12 @@
+Warm_Up_Q2:
+1. What does the following logical expression evaluate to?
+            (False or False) and (True and (not False)) 
+since false or false is logically equivalent to false, and whatever the RHS evaluated to, false and something will finally equal to false
+so this expression will equal to false
+
+2. Let a and b be boolean variables. Is it possible to set values for a and b to have the following expression evaluate as False?
+            b or (((not a) or (not a)) or (a or (not b)))
+we can simply look at the slice b or (a or (not b))
+if we want the final value is false, then both b and (a or (not b)) should evaluate to false
+then b has to be false. not b will be true. and whatever the value of a is, the expression a or true will evaluate to true
+then b or true will also be true. so we conclude that we cannot set values for a and b to have the expression evaluate as false

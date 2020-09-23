@@ -1,0 +1,10 @@
+Warm_Up_Q1:
+1. In base 10, what is the largest digit that you can put in each column? What about base 2? Base 3? Base n?
+2. Represent the number thirteen in base 5.
+3. Represent the number thirteen in base 2.
+4. What is the number 11010010 in base 10?
+
+1 In base 10, the largest digit is 9. 1 for base 2, 2 for base 3, n - 1 for base n
+2 13 in base 10 is equal 23 in base 5
+3 13 in base 10 is equal 1101 in base 2
+4 11010010 in base 2 is equal 0 + 2 + 0 + 0 + 16 + 0 + 64 + 128 = 210
