@@ -256,11 +256,17 @@ def order():
     question2 = 'Which size would you like?'
     size = pose_question_with_costs(question2, SIZE1_NAME, SIZE1_COST, SIZE2_NAME, SIZE2_COST, \
                                     SIZE3_NAME, SIZE3_COST, SIZE4_NAME, SIZE4_COST)
+    if(size == ''):
+        print('Sorry, this is not a valid option')
+        return None
     
     question3 = 'Which topping would you like?'
     topping = pose_question_with_costs(question3, TOPPING1_NAME, TOPPING1_COST, TOPPING2_NAME, \
                                        TOPPING2_COST, TOPPING3_NAME, TOPPING3_COST, TOPPING4_NAME, \
                                            TOPPING4_COST)
+    if(topping == ''):
+        print('Sorry, this is not a valid option')
+        return None
     
     subtotal = calculate_subtotal(smoothie, size, topping)
     print_receipt(subtotal, smoothie, size, topping)
