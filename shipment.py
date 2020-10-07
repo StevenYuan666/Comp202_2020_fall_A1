@@ -295,7 +295,7 @@ def get_num_books_for_box(box_w, box_d, box_h, book_w, book_d, book_h):
     0
     '''
     #check if the book can be put in the box
-    if(box_w >= book_w and box_h >= book_h and box_d >= box_d):
+    if(box_w >= book_w and box_h >= book_h and box_d >= book_d):
         times_of_w = box_w // book_w
         times_of_h = box_h // book_h
         times_of_d = box_d // book_d
